@@ -26,6 +26,11 @@ public class Main
         } while (true);
     }
 
+    /** Metodo per eseguire un Web Crawl. Il metodo è ricorsivo.
+     *
+     * @param seed URL del sito su cui effettuare il Crawl
+     * @param depth profondità dal sito di partenza
+     */
     public static void crawl(String seed, int depth)
     {
         if (depth > 3) return; //caso base
